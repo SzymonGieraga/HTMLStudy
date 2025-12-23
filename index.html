@@ -10,9 +10,23 @@
 <div class="container">
     <header class="top-bar"></header>
     <main class="content">
+
         <div class="diamond-group">
-            <div class="diamond"></div>
-            <div class="diamond second"></div>
+            <div class="control-wrapper">
+                <input type="radio" name="d1" id="d1-a" class="state-a" checked>
+                <input type="radio" name="d1" id="d1-b" class="state-b">
+                <div class="diamond"></div>
+                <label for="d1-b" class="trigger-label to-b"></label>
+                <label for="d1-a" class="trigger-label to-a"></label>
+            </div>
+
+            <div class="control-wrapper second">
+                <input type="radio" name="d2" id="d2-a" class="state-a" checked>
+                <input type="radio" name="d2" id="d2-b" class="state-b">
+                <div class="diamond"></div>
+                <label for="d2-b" class="trigger-label to-b"></label>
+                <label for="d2-a" class="trigger-label to-a"></label>
+            </div>
         </div>
 
         <div class="middle-elements">
@@ -23,9 +37,18 @@
             <div class="circle"></div>
         </div>
 
-        <div class="side-panel">
-            <span class="panel-text">ABC</span>
+        <div class="panel-wrapper">
+            <input type="radio" name="panel" id="p-a" class="state-a" checked>
+            <input type="radio" name="panel" id="p-b" class="state-b">
+
+            <div class="side-panel">
+                <span class="panel-text">ABC</span>
+            </div>
+
+            <label for="p-b" class="trigger-label to-b"></label>
+            <label for="p-a" class="trigger-label to-a"></label>
         </div>
+
     </main>
 </div>
 </body>
